@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html id="yourMom">
+
+<head>
+    <link rel="stylesheet" href="css/layout.css" type="text/css">
+</head>
+
+<body>
+    <!-- background="images/galaxy.jpg" -->
+    <div class="images" id="cloud">
+        <a href="#">
+            <p onmouseover="changeImage(owlBlackSrc)" onmouseout="changeImage(owlSrc)"> <img src=images/cloud.svg width=20% onmouseover="PlaySound('sound1')" onmouseout="StopSound('sound1')" /p> </a>
+    </div>
+
+    <div id="moon">
+        <a href="#">
+            <p onmouseover="changeImage(owlBlackOnly)" onmouseout="changeImage(owlSrc)"> <img src=images/moonBlack.svg width=20% onmouseover="PlaySound('sound3')" onmouseout="StopSound('sound3')" /p> </a>
+    </div>
+
+    <div id="wrapper">
+        <div id="owl">
+            <canvas id="myCanvasTop" width="680" height="40" style="border:3px solid #75260e;"></canvas>
+            <img id="myImage" onmouseover="changeImage(owlSrc); PlaySound('sound2')" onmouseout="StopSound('sound2')" />
+            <canvas id="myCanvasLeft" width="40" height="315" style="border:3px solid #75260e;"></canvas>
+            <canvas id="myCanvasRight" width="40" height="315" style="border:3px solid #75260e;"></canvas>
+            <canvas id="myCanvasBottom" width="680" height="40" style="border:3px solid #75260e;"></canvas>
+        </div>
+    </div>
+
+    <br> <a href="fpReferences.html">References</a> </br>
+
+    <!-- audio on/off with hover -->
+    <audio id="sound1"> <source src="audio/stormMixAll.mp3" preload="auto" type="audio/mp3"/></audio>
+    <audio id="sound2"> <source src="audio/stormMixWind.mp3" preload="auto" type="audio/mp3"/></audio>
+    <audio id="sound3"> <source src="audio/owlScreech.mp3" preload="auto" type="audio/mp3"/></audio>
+
+    <div>
+        <p class="sunsetNum">time</p>
+        <p class="actualtimeNum">realtime</p>
+    </div>
+
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.simpleWeather/3.1.0/jquery.simpleWeather.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.15.1/moment.min.js"></script>
+
+    <script src="../htmlPages/js/weather.js" type="text/javascript"></script>
+
+    <script src="../htmlPages/js/script.js" type="text/javascript"></script>
+
+
+</body>
+
+</html>

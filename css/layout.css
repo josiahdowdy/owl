@@ -1,0 +1,107 @@
+
+body{
+    text-align: center;
+    /*background-image: url(/htmlPages/images/galaxy.jpg); */
+} 
+
+
+html { 
+ /* background: url("../../htmlPages/images/galaxy.jpg") no-repeat center center fixed;  */
+    background-color: deepskyblue;
+    background: ;
+ /*   background: url(http://art.ucalgary.ca/art321/~josiah.dowdy/site/htmlPages/images/galaxy.jpg) no-repeat center center fixed; /*  */
+    
+    background-size: cover;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    
+}
+
+#background {
+    position:fixed; 
+    top:-50%; 
+    left:-50%; 
+    width:200%; 
+    height:200%;
+}
+
+#background img {
+    position:absolute; 
+    top:0; 
+    left:0; 
+    right:0; 
+    bottom:0; 
+    margin:auto; 
+    min-width:50%;
+    min-height:50%;
+}
+
+#wrapper{
+    height: 450px;
+    width: 700px;
+    margin: auto;
+    position: absolute;
+    top: 0; left: 0; bottom: 0; right: 0;
+}
+#cloud {
+    position: relative;
+}
+
+#cloud img {
+    position: absolute;
+    top: 100px;
+    right: 50px;
+}
+
+#moon {
+    position: relative;
+}
+
+#moon img {
+    position: absolute;
+    top: 20px;
+    left: 50px;
+}
+
+
+
+
+#owl img {
+    margin: 0px 0px 0px 0px; //*top, right, bottom, left *//
+}
+
+#myCanvasTop {
+    float:inherit;
+    background: #8c2a0b;   
+    margin: 0px 0px 0px 0px auto; //*top, right, bottom, left *//
+    display:inline-block;
+    
+}
+
+#myCanvasLeft {
+    float:left;
+    background: #822b10;
+    margin: 0px 0px 0px 14px; //*top, right, bottom, left *//
+}
+
+#myCanvasRight {
+    float:right;
+    background: #932e0e;
+    margin: 0px 12px 0px 0px; //*top, right, bottom, left *//
+}
+
+#myCanvasBottom {
+    float: inherit;
+    background: #9b3312;  
+    margin: 0px 0px 0px 0px; //*top, right, bottom, left *//
+}
+
+div > p {
+            cursor: pointer;
+        }
+
+.container { position:relative; }
+.imgA1 { position:absolute; top: 0px; left: 0px; z-index: 1; } 
+.imgB1 { position:absolute; top: 141px; left: 895px; z-index: 3; } 
+
